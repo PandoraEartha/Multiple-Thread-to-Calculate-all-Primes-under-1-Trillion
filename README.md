@@ -15,23 +15,17 @@ gcc -o primes primeParallel.c -lm
 ```
 
 # Result
-There are 37607912018 primes under 1 Trillion, and the last prime
+There are 37607912018 primes under 1 Trillion, and the last prime under 1 Trillion is 999999999989.
 
-under 1 Trillion is 999999999989.
+The primes will be saved to 59 binary files, in which 5 Bytes stored a prime.
 
-The primes will be saved to 59 binary files, in which 5 Bytes stored a 
-
-prime.
-
-For example, in binary File 
-
-'LENGTH_IN_BYTES_645623870__FROM_996432412681_TO_999999999989'
+For example, in binary File 'LENGTH_IN_BYTES_645623870__FROM_996432412681_TO_999999999989'
 
 the first 5 Bytes stores the prime 996432412681 as E800000009(Hex).
 
 The file name is made up by 3 parts, 
 
-LENGTH_IN_BYTES_XXXXXXXX, it shows the file length in Bytes,
+LENGTH_IN_BYTES_, it shows the file length in Bytes,
 
 FROM_, it shows the first prime in the file ,
 
